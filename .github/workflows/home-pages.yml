@@ -1,0 +1,39 @@
+# Publishes the home/ folder to GitHub Pages at scalablestudio.online.
+# Runs on every push to main that changes home/ (uploads and deletes on github.com included), or by hand.
+# Notes and settings (*.md, *.json) and dot files stay in the repository and are not published.
+name: Home to Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ["home/**", ".github/workflows/home-pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build _site from home/
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='*.md' --exclude='*.json' --exclude='.*' home/ _site/
+          ls -R _site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
