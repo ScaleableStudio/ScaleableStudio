@@ -1,4 +1,4 @@
-# Scaleable Studio home site
+# Scalable Studio home site
 
 Live at **https://scalablestudio.online** (GitHub Pages, custom domain).
 

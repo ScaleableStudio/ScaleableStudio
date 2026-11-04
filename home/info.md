@@ -1,4 +1,4 @@
-# Scaleable Studio home site
+# Scalable Studio home site
 
 Target URL: `https://scalablestudio.online`
 
@@ -9,8 +9,8 @@ Target URL: `https://scalablestudio.online`
 - `contact/index.html` — Contact
 - `assets/` — shared Open Frame mark, styles and progressive reveal script
 
-The site is based on `Brands/Scaleable Studio/blueprint.md` and its Open Frame vision board. The spelling
-**Scaleable Studio**, Open Frame mark, public copy and design system remain working brand direction until the
+The site is based on `Brands/Scaleable Studio/blueprint.md` and its Open Frame vision board. The name
+**Scalable Studio** is settled (Ken, 2026-11-04); the Open Frame mark, public copy and design system remain working brand direction until the
 founders approve them.
 
 The contact page currently points to the existing mailbox `founders@scalablestudio.online`. Confirm that it is
