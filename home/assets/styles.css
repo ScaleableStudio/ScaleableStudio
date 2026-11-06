@@ -38,9 +38,9 @@ img { max-width: 100%; height: auto; }
 a { color: var(--ink); }
 a:hover { color: var(--gold-text); }
 
-/* The supplied logo PNGs have white backgrounds; multiply hides them on light grounds.
-   Remove once transparent PNG/SVG logo files are available. */
-.brand img, .lockup { mix-blend-mode: multiply; }
+/* The lockup PNG has a white background; multiply hides it on light grounds.
+   Remove once a transparent lockup is available. (The header logo, ss-logo.png, is already transparent.) */
+.lockup { mix-blend-mode: multiply; }
 
 .shell { max-width: var(--shell); margin: 0 auto; padding: 0 24px; }
 

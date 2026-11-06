@@ -1,1 +1,5 @@
 _site/
+
+# Local previews from tools/
+tools/_preview/
+tools/.logo-prepared.png

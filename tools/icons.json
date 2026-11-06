@@ -1,0 +1,23 @@
+{
+  "_note": "Settings for build-icons.js. Sources are Ann's originals in Scriptorium; outputs go to home/ (published). Re-run after Ann sends new files.",
+  "sourceDir": "../../inbox/SS_Website_Homepage_V2/SS_Website_Homepage_V2/assets",
+  "outDir": "../home",
+  "ffmpeg": "../../../../Workshop/Bezalel/tools/ffmpeg",
+  "logo": {
+    "source": "SSonlineLOGO.PNG",
+    "_why": "Header logo. White background turned transparent (colour-to-alpha), trimmed, centred on a square with a small margin. Shown at 48 px; 144 px keeps it sharp on 3x screens.",
+    "whiteToAlpha": true,
+    "marginPercent": 4,
+    "outputs": [{ "file": "assets/ss-logo.png", "size": 144 }]
+  },
+  "favicon": {
+    "source": "ss-logo-mark.png",
+    "_why": "Ann's mark (gold bar on black) as the site icon in tabs, bookmarks and phone home screens.",
+    "outputs": [
+      { "file": "favicon.ico", "size": 48 },
+      { "file": "assets/favicon-32.png", "size": 32 },
+      { "file": "assets/favicon-192.png", "size": 192 },
+      { "file": "assets/apple-touch-icon.png", "size": 180 }
+    ]
+  }
+}

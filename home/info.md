@@ -18,9 +18,13 @@ TRUST | QUALITY | SCALE) and the footer (gold wordmark and gold rule on cream).
 - `contact/index.html`: Contact, V2 design; email `founders@scalablestudio.online`
 - `about/index.html`: redirects to `/#about` (About now lives on the homepage); keeps old links working
 - `assets/styles.css`: Ann's V2 styles, then a marked section of additions for inner pages
-- `assets/ss-logo-mark.png` (192 px) and `assets/ss-logo-lockup.png` (880 px): web-size, 64-colour copies of
-  Ann's logos. The originals have white backgrounds, hidden with `mix-blend-mode: multiply`; swap in transparent
-  PNG or SVG files when available and delete that rule.
+- `assets/ss-logo.png` (144 px, shown at 48): header logo from Ann's `SSonlineLOGO.PNG` (Ken, 2026-11-06), white turned
+  transparent, trimmed and centred. `assets/ss-logo-lockup.png` (880 px): About section; its white background is still
+  hidden with `mix-blend-mode: multiply` until a transparent lockup arrives.
+- Favicons from Ann's `ss-logo-mark.png` (gold bar on black): `/favicon.ico` (48), `assets/favicon-32.png`,
+  `assets/favicon-192.png`, `assets/apple-touch-icon.png` (180).
+- Logo and favicons are built by `../tools/build-icons.js` (sizes in `../tools/icons.json`) from the originals in
+  Scriptorium; re-run it when Ann sends new files.
 
 ## Legal page (prepared, not published)
 
@@ -32,5 +36,5 @@ cover; the HTML comments hold facts about how the site works today. To publish: 
 ## Open items
 
 - Ebook kits store URL: "Browse the kits" still points to `#ebooks` (search for `TODO` in `index.html`).
-- Transparent logo files (see above).
+- Transparent lockup file for the About section (see above).
 - Legal wording (see above).
