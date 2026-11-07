@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ebook kits — Scalable Studio System</title>
+  <meta name="description" content="Framework-led ebook kits from Scalable Studio System: guides plus the tools to put them into practice.">
+  <!--
+    Page template. Built by .github/scripts/build-ebook-kits.js into /ebook-kits/ when kits.json has
+    "visible": true. The kit cards replace the KITS marker below. Edit the design here, not in the output.
+  -->
+  <link rel="canonical" href="https://scalablestudio.online/ebook-kits/">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/assets/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+    .kit-cover { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--sand); margin: -32px -28px 8px; width: calc(100% + 56px); max-width: none; }
+    .kit-files { list-style: none; margin: 0; padding: 12px 0 0; border-top: 1px solid var(--line); font-size: 15px; }
+    .kit-files li { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; padding: 4px 0; }
+    .kit-files span { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Locked header band -->
+  <div class="topband">
+    <div><span class="gold strong">Governed</span><span aria-hidden="true"> / </span><span>Systems for Scale</span></div>
+    <div>Trust <span class="gold">|</span> Quality <span class="gold">|</span> Scale</div>
+  </div>
+
+  <header class="site-header">
+    <div class="shell nav-shell">
+      <a class="brand" href="/">
+        <img src="/assets/ss-logo.png" alt="" width="48" height="48">
+        <span>Scalable Studio System</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/#studio">The studio</a>
+        <a href="/#work">What we build</a>
+        <a href="/ebook-kits/" aria-current="page">Ebook kits</a>
+        <a href="/#about">About</a>
+        <a class="button" href="/contact/">Start a conversation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="shell">
+        <p class="eyebrow">Ebook kits</p>
+        <h1>Frameworks you can use <em>today.</em></h1>
+        <div class="rule"></div>
+        <p class="lede">Framework-led ebook kits that teach creative businesses how to work with AI on purpose — guides plus the tools to put them into practice.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <!-- KITS -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Locked footer -->
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="footer-wordmark">SCALABLE STUDIO SYSTEM</p>
+      <div class="footer-rule"></div>
+      <div class="footer-row">
+        <span>Structure that makes room for growth.</span>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="/#studio">The studio</a>
+          <a href="/#work">What we build</a>
+          <a href="/ebook-kits/">Ebook kits</a>
+          <a href="/#about">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="https://sidebox.scalablestudio.online/">SideBOX</a>
+        </nav>
+        <span>© <span data-year>2026</span> Scalable Studio System LLC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
+  </script>
+</body>
+</html>

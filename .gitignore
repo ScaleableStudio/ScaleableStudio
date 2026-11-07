@@ -3,3 +3,6 @@ _site/
 # Local previews from tools/
 tools/_preview/
 tools/.logo-prepared.png
+
+# Local preview of the Ebook kits page
+_preview/

@@ -1,12 +1,13 @@
 # Publishes the home/ folder to GitHub Pages at scalablestudio.online.
-# Runs on every push to main that changes home/ (uploads and deletes on github.com included), or by hand.
+# Also builds /ebook-kits/ from drafts/ebook-kits/ (see its README.md).
+# Runs on every push to main that changes home/, drafts/ebook-kits/ or .github/scripts/ (uploads and deletes on github.com included), or by hand.
 # Notes and settings (*.md, *.json) and dot files stay in the repository and are not published.
 name: Home to Pages
 
 on:
   push:
     branches: [main]
-    paths: ["home/**", ".github/workflows/home-pages.yml"]
+    paths: ["home/**", "drafts/ebook-kits/**", ".github/scripts/**", ".github/workflows/home-pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -30,7 +31,10 @@ jobs:
         run: |
           mkdir -p _site
           rsync -a --exclude='*.md' --exclude='*.json' --exclude='.*' home/ _site/
-          ls -R _site
+      - name: Build the Ebook kits page (only when drafts/ebook-kits/kits.json has visible:true)
+        run: node .github/scripts/build-ebook-kits.js
+      - name: List _site
+        run: ls -R _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

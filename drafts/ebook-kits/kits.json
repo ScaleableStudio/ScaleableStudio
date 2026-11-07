@@ -1,0 +1,7 @@
+{
+  "_note": "Settings for the Ebook kits page. visible:false = the page is not published and the nav still points to the homepage card. Set visible to true (Ken or Ann) to publish /ebook-kits/ and point every 'Ebook kits' link at it. Each kit is a sub-folder here; see README.md.",
+  "visible": false,
+  "path": "ebook-kits",
+  "fileTypes": [".pdf", ".docx", ".doc", ".xlsx", ".pptx", ".epub", ".zip", ".png", ".jpg", ".jpeg", ".webp"],
+  "emptyMessage": "Our first kits are being prepared. Check back soon, or start a conversation to hear when they launch."
+}

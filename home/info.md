@@ -35,6 +35,7 @@ cover; the HTML comments hold facts about how the site works today. To publish: 
 
 ## Open items
 
-- Ebook kits store URL: "Browse the kits" still points to `#ebooks` (search for `TODO` in `index.html`).
+- Ebook kits: the page is prepared in `../drafts/ebook-kits/` (Ken, MAC order 2026-11-07). Ann adds kit folders; setting
+  `visible` to true in its `kits.json` publishes /ebook-kits/ and repoints every `#ebooks` link (header, footer, card) at it.
 - Transparent lockup file for the About section (see above).
 - Legal wording (see above).
